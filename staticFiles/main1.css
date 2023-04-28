@@ -1,0 +1,15 @@
+.submit_button{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    font-size: 20px
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+body{
+    background-image: url('glasses-spectacles-macbook-iphone.jpg');
+    background-repeat:repeat;
+}

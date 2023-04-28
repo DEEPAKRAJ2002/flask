@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main1.css' />
+</head>
+<body>
+    <h1 style="text-align: center;font-weight: bold">Retinal Vessel Image Segmentation And Cataract Disease Detection</h1>
+    <p style="margin: 50px;text-align: center; font-size: 25px">Please upload the file and click Submit</p>
+    <form style="border:5px solid black;border-radius: 10px; margin-left: 500px;margin-right: 400px;height: 200px" method="POST" enctype="multipart/form-data" action="/">
+        <input style="margin-bottom: 70px;margin-top: 70px;margin-left: 70px;" type="file" id="myFile" name="uploaded-file" accept=".jpg,.png">
+        <br>
+        <input style="margin-left: 150px" class='submit_button' type="submit" value="Submit">
+    </form>
+    <br>
+    <p style="color:green; text-align: center; margin-left: 50px;font-size: 20px;">File uploaded successfully</p>
+    <div style="margin-left: 500px;">
+    <form action="/show_image" target="_blank">
+        <input style="margin-right: 100px; margin-left: 100px"class='submit_button' type="submit" value="Show Segmented Image" />
+    </form>
+    <form  action="/detection" target="_blank">
+        <input style="margin-left:120px; margin-top: 30px" class='submit_button' type = "submit" value="Detect Cataract"/>
+    </form>  
+    </div>       
+</body>
+</html>
